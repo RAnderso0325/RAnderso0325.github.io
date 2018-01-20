@@ -1,40 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Reilly Anderson</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<nav>
-		<div class="nav-wrapper">
-			<a href="/" class="brand-logo"><i class="material-icons">cloud</i>Reilly</a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="about.html">About</a></li>
-				<li><a href="projects.html"><i class="material-icons">view_module</i>Projects</a></li>
-			</ul>
-			<ul class="side-nav" id="mobile-demo">
-				<li><a href="about.html">About</a></li>
-				<li><a href="projects.html"><i class="material-icons">view_module</i>Projects</a></li>
+	<div class="top-bar">
+		<div class="top-bar-left">
+			<ul class="vertical medium-horizontal menu" id="myMenu">
+				<li class="menu-text menu-link active" data-menuanchor="intro"><a href="#intro">Reilly Anderson</a></li>
+				<li class="menu-text menu-link" data-menuanchor="about"><a href="#about">About Me</a></li>
+				<li class="menu-text menu-link" data-menuanchor="projects"><a href="#projects">Projects</a></li>
+				<li class="menu-text menu-link" data-menuanchor="contact"><a href="#contact">Contact Me</a></li>
 			</ul>
 		</div>
-	</nav>
-<div class="container">
-	<div class="row">
-		<div class="col s12 m4 l3">
-			<h1>hello mom</h1>
-		</div>
 	</div>
-	<div class="row">
-		<div class="s12 m8 l9">
-			<p>[because she's the only one lookin' besides Braeden, hi B]</p>
+	
+<div id="fullpage" class="container">
+	<section class="section active" data-anchor="intro" id="section-landing">
+		<div class="intro">
+			<div class="row">
+				<div class="columns large-4 medium-4 small-6">
+					<h2>Landing section: Reilly</h2>
+					<h5>Include photo here maybe</h5>
+				</div>
+				<div class="columns large-4 medium-4 small-6">
+					<h4>optional other text for landing area</h4>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+	<section class="section" data-anchor="about" id="seciont-1">
+		<div class="about">
+			<div class="row">
+				<div class="columns large-4 medium-4 small-6">
+					<h2>some intro information about me</h2>
+				</div>
+				<div class="columns large-4 medium-4 small-6">
+					<h4>optional other info or something</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" data-anchor="projects" id="section-2">
+		<div class="projects">
+			<div class="row">
+				<div class="slide">
+					<div class="slide-text">
+						<h1>My projects, slide 1</h1>
+						<h3>optional, include image of some sort</h3>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide-text">
+						<h1>Project one</h1>
+						<h3>have a photo here</h3>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide-text">
+						<h1>Project two</h1>
+						<h3>have a photo here</h3>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide-text">
+						<h1>Project three</h1>
+						<h3>have a photo here</h3>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide-text">
+						<h1>Project four</h1>
+						<h3>have a photo here</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section" data-anchor="contact" id="section-3">
+		<div class="contact">
+			<div class="columns large-4 medium-4 small-12">
+				<h2>contact info</h2>
+			</div>
+		</div>
+	</section>
 </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.extensions.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script>
+	$('#fullpage').fullpage({
+		anchors: ['intro', 'about', 'projects', 'contact', 'lastPage'],
+		menu: '#myMenu',
+		slidesNavigation: true,
+		css3: true,
+		scrollingSpeed: 1000,
+		responsiveWidth: 800,
+		responsiveHeight: 300
+	});
+</script>
+</script>
 </body>
 </html>
