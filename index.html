@@ -10,9 +10,13 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<div class="top-bar">
+	<div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+		<button class="menu-icon" type="button" data-toggle="main-nav"></button>
+		<div class="title-bar-title">Reilly (put an icon maybe)</div>
+	</div>
+	<div class="top-bar" id="main-nav">
 		<div class="top-bar-left">
-			<ul class="vertical medium-horizontal menu" id="myMenu">
+			<ul class="vertical dropdown menu medium-horizontal" id="main-nav" data-dropdown-menu>
 				<li class="menu-text menu-link active" data-menuanchor="intro"><a href="#intro">Reilly Anderson</a></li>
 				<li class="menu-text menu-link" data-menuanchor="about"><a href="#about">About Me</a></li>
 				<li class="menu-text menu-link" data-menuanchor="projects"><a href="#projects">Projects</a></li>
@@ -20,7 +24,6 @@
 			</ul>
 		</div>
 	</div>
-	
 <div id="fullpage" class="container">
 	<section class="section active" data-anchor="intro" id="section-landing">
 		<div class="intro">
@@ -29,8 +32,7 @@
 					<h2>Landing section: Reilly</h2>
 					<h5>Include photo here maybe</h5>
 				</div>
-				<div class="columns large-4 medium-4 small-6">
-					<h4>optional other text for landing area</h4>
+				<div class="columns small-6">
 				</div>
 			</div>
 		</div>
@@ -39,7 +41,9 @@
 		<div class="about">
 			<div class="row">
 				<div class="columns large-4 medium-4 small-6">
-					<h2>some intro information about me</h2>
+					<h4>I am a full-stack web developer who thrives on finding creative solutions to complex problems. My previous experience in
+					research and development for biotechnology, medicine, and college access in the non-profit sector inform everything I do
+					from my dedication to projects, to my adaptability in rapidly mastering new subject areas.</h4>
 				</div>
 				<div class="columns large-4 medium-4 small-6">
 					<h4>optional other info or something</h4>
@@ -50,34 +54,36 @@
 	<section class="section" data-anchor="projects" id="section-2">
 		<div class="projects">
 			<div class="row">
-				<div class="slide">
-					<div class="slide-text">
-						<h1>My projects, slide 1</h1>
-						<h3>optional, include image of some sort</h3>
+				<div class="row">
+					<div class="slide">
+						<div class="slide-text">
+							<h1>My projects, slide 1</h1>
+							<h3>optional, include image of some sort</h3>
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<h1>Project one</h1>
-						<h3>have a photo here</h3>
+					<div class="slide">
+						<div class="slide-text">
+							<h1>Project one</h1>
+							<h3>have a photo here</h3>
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<h1>Project two</h1>
-						<h3>have a photo here</h3>
+					<div class="slide">
+						<div class="slide-text">
+							<h1>Project two</h1>
+							<h3>have a photo here</h3>
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<h1>Project three</h1>
-						<h3>have a photo here</h3>
+					<div class="slide">
+						<div class="slide-text">
+							<h1>Project three</h1>
+							<h3>have a photo here</h3>
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<h1>Project four</h1>
-						<h3>have a photo here</h3>
+					<div class="slide">
+						<div class="slide-text">
+							<h1>Project four</h1>
+							<h3>have a photo here</h3>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -85,8 +91,16 @@
 	</section>
 	<section class="section" data-anchor="contact" id="section-3">
 		<div class="contact">
-			<div class="columns large-4 medium-4 small-12">
-				<h2>contact info</h2>
+			<div class="row">
+				<div class="columns large-4 medium-6 small-10">
+					<div class="row">
+						<img src="./images/headshot.jpg">
+					</div>
+					<div class="row">
+						<button href="https://github.com/RAnderso0325/">Github</button>
+						<button href="https://www.linkedin.com/in/reilly-anderson/">LinkedIn</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -95,17 +109,7 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.extensions.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
-<script>
-	$('#fullpage').fullpage({
-		anchors: ['intro', 'about', 'projects', 'contact', 'lastPage'],
-		menu: '#myMenu',
-		slidesNavigation: true,
-		css3: true,
-		scrollingSpeed: 1000,
-		responsiveWidth: 800,
-		responsiveHeight: 300
-	});
-</script>
-</script>
+<script src="./script.js"></script>
+
 </body>
 </html>

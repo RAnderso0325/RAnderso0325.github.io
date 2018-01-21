@@ -12,55 +12,67 @@
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
-
-#fullPage-nav li a,#menu li a,a{
-    text-decoration:none
+.menu-text{
+    background:#B6717C;
+    border-radius:5px;
+    padding: 3px;
+    margin: 20px !important;
+    border: 1px solid black;
 }
-.section,.wrap{
-    position:relative
-}
-img{
-    border:0
-}
-ol,ul{
-    list-style:none
-}
-body{
-    font-family:arial,helvetica;
-    overflow:hidden;
-}
-#fullpage,.section,body,html{
-    height:100%
-}
-#myMenu{
-    z-index:70;position:fixed
-}
-#myMenu li{
-    display:inline-block;
-    margin:10px;
-    color:#000;
-    background:#fff;
-    background:rgba(255,255,255,.5);
-    border-radius:10px
-}
-#myMenu li.active{
+.menu-text.active{
     background:#666;
-    background:rgba(0,0,0,.5);
     color:#fff
-}
-#myMenu li a,#menu li.active a:hover{
+} 
+.menu-text.active a:hover{
     color:#000
 }
-#myMenu li:hover{
-    background:rgba(255,255,255,.8)
+.no-js .title-bar {
+  display: none;
 }
-#myMenu li a,#menu li.active a{
-    padding:9px 18px;display:block
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+  .no-js .title-bar {
+    display: none;
+  }
 }
-#myMenu{
-    top:0;
-    left:0;
-    height:40px;
-    width:100%;
-    margin:0;
+.top-bar {
+    z-index: 2;
+    background-color: transparent !important;
+}
+#main-nav{
+    background-color: transparent !important;
+    z-index: 60;
+    position: fixed !important;
+    top: 0;
+}
+.menu-text a{
+    color: #F8F7F7 !important;
+}
+.title-bar{
+    background-color: grey;
+}
+#fullpage,.section,body,html,.fp-tableCell{
+    height:100% !important;
+    background-color: #5B584F;
+    color: #B6717C;
+}
+.fp-next{
+    border-color: transparent transparent transparent #F8F7F7 !important;
+}
+.fp-previous{
+    border-color: transparent #F8F7F7 transparent transparent !important;
+}
+.fp-slidesNav{
+    text-align: center !important;
+}
+/* #fp-nav ul, .fp-slidesNav ul {
+    margin-top: -100px !important;
+    color: #F8F7F7 !important;
+} */
+
+#section-landing .fp-tableCell{
+    background-image: url("./images/reilly-background.jpg");
+    background-size: cover;
 }
