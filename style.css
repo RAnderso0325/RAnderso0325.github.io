@@ -14,10 +14,10 @@
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 .menu-text{
     background:#B6717C;
-    border-radius:5px;
+    border-radius:20px;
     padding: 3px;
     margin: 20px !important;
-    border: 1px solid black;
+    border: 1px solid #30201C;
 }
 .menu-text.active{
     background:#666;
@@ -58,6 +58,10 @@
     background-color: #5B584F;
     color: #B6717C;
 }
+.slide-text{
+    margin-top: 300px !important;
+    margin-left: 50px !important;
+}
 .fp-next{
     border-color: transparent transparent transparent #F8F7F7 !important;
 }
@@ -75,4 +79,15 @@
 #section-landing .fp-tableCell{
     background-image: url("./images/reilly-background.jpg");
     background-size: cover;
+}
+.intro-text{
+    top: -45px;
+}
+.github-link, .linkedin-link, .app-link{
+    text-decoration: none;
+    border: 1px solid #30201C;
+    padding: 10px;
+    background-color: #B6717C;
+    color: #F8F7F7;
+    margin: 10px;
 }
