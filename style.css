@@ -91,3 +91,20 @@
     color: #F8F7F7;
     margin: 10px;
 }
+.contact-div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/* tablets */
+@media only screen and (max-width: 768px){
+
+}
+/* mobile */
+@media only screen and (max-width: 600px){
+
+}
+/* mobile */
+@media only screen and (orientation: landscape){
+    
+}
