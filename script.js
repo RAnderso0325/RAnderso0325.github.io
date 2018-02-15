@@ -1,12 +1,33 @@
 $(document).ready(function() {
-  $(document).foundation();
+  $(".button-collapse").sideNav();
   $("#fullpage").fullpage({
     anchors: ["intro", "about", "projects", "contact", "lastPage"],
     menu: "#main-nav",
-    slidesNavigation: true,
+    slidesNavigation: false,
     css3: true,
-    scrollingSpeed: 1000,
-    responsiveWidth: 800,
-    responsiveHeight: 300
+    scrollBar: true,
+    autoScrolling: false,
+
+		// //Accessibility
+		keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+
+		// //Design
+		controlArrows: true,
+
+		// //Custom selectors
+		sectionSelector: '.section',
+		slideSelector: '.slide',
+		lazyLoading: true,
+
+		// //events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+		afterResize: function(){},
+		afterResponsive: function(isResponsive){},
+		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
   });
 });
