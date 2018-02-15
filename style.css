@@ -43,7 +43,7 @@
     background-image: url("./images/reilly-background.jpg");
     background-size: cover;
 }
-.github-link, .linkedin-link, .app-link, .email-link{
+.github-link, .resume-link, .linkedin-link, .app-link, .email-link{
     text-decoration: none;
     border: none;
     padding: 10px;
