@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<title>Reilly Anderson</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
@@ -13,15 +13,17 @@
 	<div class="navbar-fixed">
 		<nav id="main-nav">
 			<div class="nav-wrapper">
-				<a data-menuanchor="intro" href="#intro" class="brand-logo">Reilly</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<a data-menuanchor="intro" href="#intro" class="brand-logo"><i class="fab fa-rendact"></i></a>
+				<a href="#" data-activates="mobile-view" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
+					<li data-menuanchor="intro"><a href="#intro">Reilly</a></li>
 					<li data-menuanchor="about"><a href="#about">About Me</a></li>
 					<li data-menuanchor="projects"><a href="#projects">Projects</a></li>
 					<li data-menuanchor="contact"><a href="#contact">Contact me</a></li>
 					<li><a target="_blank" href="./helper/randerson_resume.pdf">Resume</a></li>
 				</ul>
-				<ul class="side-nav" id="mobile-demo">
+				<ul class="side-nav" id="mobile-view">
+					<li data-menuanchor="intro"><a href="#intro">Reilly</a></li>
 					<li data-menuanchor="about"><a href="#about">About Me</a></li>
 					<li data-menuanchor="projects"><a href="#projects">Projects</a></li>
 					<li data-menuanchor="contact"><a href="#contact">Contact me</a></li>
@@ -73,11 +75,14 @@
 						<div class="slide-text row">
 							<div class="col l6 m6 s12">
 								<h1>Gourmet Group</h1>
-								<a class="app-link" href="https://gourmet-group.herokuapp.com/">Gourmet Group</a>
-								<h4>Technologies: Node.js/Express, SQL, PostgreSQL, OAuth, JavaScript, AJAX, MaterializeCSS, HTML, CSS, Food2Fork</h4>
+								<div class="row">
+									<a class="app-link" href="https://gourmet-group.herokuapp.com/"><i class="fas fa-external-link-alt"></i> Live Site</a>
+									<a class="app-link" href="https://github.com/RAnderso0325/project2_recipes"><i class="fas fa-external-link-alt"></i> Github</a>
+								</div>
+								<h5>Technologies: Node.js/Express, SQL, PostgreSQL, OAuth, JavaScript, AJAX, MaterializeCSS, HTML, CSS</h5>
 							</div>
 							<div class="col l5 m5 s11">
-								<img class="project-img responsive-img" src="./images/gourmet-group.png">
+								<img class="project-img responsive-img" src="./images/g2.png">
 							</div>
 						</div>
 					</div>
@@ -85,23 +90,29 @@
 						<div class="slide-text row">
 							<div class="col l6 m6 s12">
 								<h1>ProlifiCal</h1>
-								<a class="app-link" href="https://prolifical.herokuapp.com/">ProlifiCal</a>
-								<h4>Technologies: Node.js/Express, React.js, Mongodb, Mongoose, JavaScript (ES6), HTML, CSS</h4>
+								<div class="row">
+									<a class="app-link" href="https://prolifical.herokuapp.com/"><i class="fas fa-external-link-alt"></i> Live Site</a>
+									<a class="app-link" href="https://github.com/RAnderso0325/react-calendar-app"><i class="fas fa-external-link-alt"></i> Github</a>
+								</div>
+								<h5>Technologies: Node.js/Express, React.js, Mongodb, Mongoose, JavaScript (ES6), HTML, CSS</h5>
 							</div>
 							<div class="col l5 m5 s11">
-								<img class="project-img responsive-img">
+								<img class="project-img responsive-img" src="./images/prolifical.png">
 							</div>
 						</div>
 					</div>
 					<div class="slide col l10 m10 s10">
 						<div class="slide-text row">
-							<div clas="col l6 m6 s12">
-								<h1>Uno</h1>
-								<a class="app-link" href="http://www.reillyanderson.com/uno">Uno</a>
-								<h4>Technologies: JavaScript, JQuery, HTML, CSS</h4>
+							<div class="col l6 m6 s12">
+								<h1>UNO</h1>
+								<div class="row">
+									<a class="app-link" href="http://www.reillyanderson.com/uno"><i class="fas fa-external-link-alt"></i> Live Site</a>
+									<a class="app-link" href="https://github.com/RAnderso0325/uno"><i class="fas fa-external-link-alt"></i> Github</a>
+								</div>
+								<h5>Technologies: JavaScript, JQuery, HTML, CSS</h5>
 							</div>
 							<div class="col l5 m5 s11">
-								<img class="project-img responsive-img">
+								<img class="project-img responsive-img" src="./images/uno.png">
 							</div>
 						</div>
 					</div>
@@ -124,8 +135,27 @@
 						<img class="responsive-img" src="./images/headshot.jpg">
 					</div>
 					<div class="row">
-						<a class="github-link" href="https://github.com/RAnderso0325/">Github</a>
-						<a class="linkedin-link" href="https://www.linkedin.com/in/reilly-anderson/">LinkedIn</a>
+						<a class="github-link" target="_blank" href="https://github.com/RAnderso0325/"><i class="fab fa-github"></i> Github</a>
+						<a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/reilly-anderson/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+						<script type="text/javascript">
+							var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+							"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+							" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
+							"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+							"\"(9),7\\\"\\\\v|m~|ao 03\\\\07\\\\03\\\\\\\\QX33\\\\0V\\\\YPsZ13\\\\06\\\\" +
+							"02\\\\\\\\YoY_3C00\\\\\\\\EAGJnL\\\\\\\\3{03\\\\\\\\WVNB0B00\\\\\\\\B=rvvzG" +
+							"{J5`(uvqc.{P/77\\\\1i\\\\|hii4F'1in22\\\\02\\\\02\\\\\\\\32\\\\07\\\\01\\\\" +
+							"\\\\10\\\\06\\\\02\\\\\\\\G(PD32\\\\04\\\\03\\\\\\\\01\\\\03\\\\00\\\\\\\\2" +
+							"5\\\\03\\\\01\\\\\\\\00\\\\0_\\\\.-c>tus~)Gqgzt{m3^ef&jokidBdoo\\\\r7\\\\01" +
+							"\\\\\\\\31\\\\07\\\\03\\\\\\\\24\\\\00\\\\03\\\\\\\\22\\\\06\\\\01\\\\\\\\3" +
+							"2\\\\01\\\\03\\\\\\\\35\\\\06\\\\02\\\\\\\\00\\\\0K\\\\37\\\\03\\\\03\\\\\\" +
+							"\\02\\\\04\\\\00\\\\\\\\\\\\r6\\\\00\\\\\\\\5H1U00\\\\\\\\03\\\\07\\\\02\\\\"+
+							"\\\\14\\\\0C\\\\03\\\\0]\\\\wB10/9+3y/\\\"\\\\\\\\\\\\1;'>?2\\\\+(\\\"}fo;n" +
+							" uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomfrg.intr=So+7;12%=;y=iy+9)=7i=f({i" +
+							"+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu)\\\"\"" +
+							")"                                                                           ;
+							while(x=eval(x));
+						</script>
 					</div>
 				</div>
 				<div class="col l4 m3 s1"></div>
