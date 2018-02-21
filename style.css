@@ -15,17 +15,21 @@
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 #main-nav{
-    background-color: transparent !important;
+    background-color: #BFB6B4 !important;
     position: fixed !important;
     top: 0;
+    z-index: 99;
 }
 .menu-text a{
     color: #F8F7F7 !important;
 }
 #fullpage,.section,body,html,.fp-tableCell{
     max-height: 99vh;
-    background-color: #5B584F;
-    color: #B6717C;
+    background-color: #7F7978;
+    color: #FFF3F0;
+}
+.intro{
+    color: #B25850;
 }
 .slide-text{
     margin-left: 50px !important;
@@ -47,8 +51,8 @@
     text-decoration: none;
     border: none;
     padding: 10px;
-    background-color: #B6717C;
-    color: #F8F7F7;
+    background-color: #4DA0FF;
+    color: #FFF3F0;
     margin: 10px;
 }
 .contact-div{
