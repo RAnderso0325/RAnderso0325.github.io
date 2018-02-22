@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$(".button-collapse").sideNav();
-	$(".carousel").carousel();
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
   $("#fullpage").fullpage({
     anchors: ["intro", "about", "projects", "contact", "lastPage"],
     menu: "#main-nav",

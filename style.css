@@ -46,6 +46,7 @@
 #section-landing .fp-tableCell{
     background-image: url("./images/reilly-background.jpg");
     background-size: cover;
+    z-index: -1;
 }
 .github-link, .resume-link, .linkedin-link, .app-link, .email-link{
     text-decoration: none;
@@ -54,6 +55,7 @@
     background-color: #4DA0FF;
     color: #FFF3F0;
     margin: 10px;
+    border-radius: 5px;
 }
 .contact-div{
     display: flex;
@@ -66,4 +68,7 @@
 }
 .section{
     padding-top: 0 !important;
+}
+.contact-img{
+    border-radius: 5px;
 }
